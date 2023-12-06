@@ -2,8 +2,8 @@
 	<div class="bg-light-peach mt-28 pb-20">
 		<div class="container mx-auto space-y-14">
 			<div class="header space-y-2">
-				<h1 class="text-4xl">Jessica Turner</h1>
-				<h2 class="text-2xl">Frontend Developer</h2>
+				<h1 class=" text-3xl lg:text-4xl">Jessica Turner</h1>
+				<h2 class="text-1.5xl lg:text-2xl">Frontend Developer</h2>
 				<div class="links flex gap-4 justify-start">
 					<nuxt-link
 						class="caps text-dark-purple hover:text-orange animate-underline orange"

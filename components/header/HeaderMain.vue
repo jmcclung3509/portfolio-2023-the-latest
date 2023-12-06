@@ -88,7 +88,7 @@
 							:class="
 								data.mobileMenuOpen
 									? 'text-light-peach hover:text-orange'
-									: 'text-medium-purple hover:text-light-purple'
+									: 'text-dark-purple hover:text-light-purple'
 							"
 							:icon="
 								data.mobileMenuOpen
