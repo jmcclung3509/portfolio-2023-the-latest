@@ -16,7 +16,7 @@
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<Nuxt-Link
 						to="/"
-						class="text-extra-light-purple font-thin hover:text-medium-purple">
+						class="text-dark-purple font-thin hover:text-orange">
 						Jessica Turner
 					</Nuxt-Link>
 				</div>
@@ -28,7 +28,7 @@
 							<li class="relative p-2">
 								<a
 									href="/about"
-									class="animate-underline text-extra-light-purple font-thin purple"
+									class="animate-underline text-dark-purple font-thin orange"
 									>About</a
 								>
 							</li>
@@ -36,14 +36,14 @@
 							<li class="relative p-2">
 								<a
 									href="/projects/sitezeus"
-									class="animate-underline purple text-extra-light-purple font-thin"
+									class="animate-underline orange text-dark-purple font-thin"
 									>Projects</a
 								>
 							</li>
 							<li class="relative p-2">
 								<a
 									href="https://resume.io/r/FY7HX7IvG"
-									class="animate-underline purple text-extra-light-purple font-thin"
+									class="animate-underline orange text-dark-purple font-thin"
 									target="_blank"
 									>Resume</a
 								>
@@ -52,7 +52,7 @@
 							<li class="relative p-2">
 								<a
 									href="/contact"
-									class="animate-underline text-extra-light-purple font-thin purple"
+									class="animate-underline text-dark-purple font-thin orange"
 									>Contact</a
 								>
 							</li>
@@ -63,14 +63,14 @@
 							href="https://github.com/jmcclung3509"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-extra-light-purple font-thin hover:text-medium-purple"
+								class="social-icon text-1.5xl text-dark-purple font-thin hover:text-orange"
 								:icon="['fab', 'github']"
 						/></a>
 						<a
 							href="https://www.linkedin.com/in/jessica-turner-94b549229/"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-extra-light-purple font-thin hover:text-medium-purple"
+								class="social-icon text-1.5xl text-dark-purple font-thin hover:text-orange"
 								:icon="['fab', 'linkedin']" />
 						</a>
 					</div>

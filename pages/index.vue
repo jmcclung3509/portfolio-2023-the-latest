@@ -9,7 +9,7 @@
 					loop
 					id="myVideo">
 					<source
-						src="@/assets/images/videos/purple-smoke.mp4"
+						src="@/assets/videos/purple-smoke.mp4"
 						type="video/mp4" />
 				</video>
 				<div

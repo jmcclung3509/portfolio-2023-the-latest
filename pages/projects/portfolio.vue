@@ -11,11 +11,10 @@
 					Portfolio
 				</h2>
 				<p class="w-full lg:w-[80%] mx-auto">
-					My personal website, past and present. I strive to unleash
-					my creativity when designing and developing my personal
+				I strive to unleash my creativity when designing and developing my personal
 					website, which provides me with the opportunity to explore
 					new ideas. Sometimes they succeed, and sometimes they don't,
-					but it always serves as a valuable learning experience.
+					but it always a valuable learning experience.
 				</p>
 			</div>
 
@@ -27,7 +26,7 @@
 					class="text-left space-y-4 lg:w-[80%] lg:mr-auto"
 						v-if="slotProps.realIndex === 0">
 						<p>
-							My current portfolio is constructed using Vue, Nuxt,
+							The previous version of my portfolio was constructed using Vue, Nuxt,
 							and Tailwind. I reused many of the elements of my previous website, but updated the hero image with new animation, and restructured the layout for a more user-friendly experience.
 						</p>
 					</div>
@@ -35,13 +34,12 @@
 					class="text-left space-y-4 lg:w-[80%] lg:mr-auto"
 						v-if="slotProps.realIndex === 1">
 						<p>
-							My previous portfolio, created early 2023, is constructed using Vue, Nuxt,
+							The portfolio I created in early 2023, was constructed using Vue, Nuxt,
 							and Tailwind. The design process began in Figma, and
 							I crafted vector images using Adobe Illustrator.
-							Building my portfolio has been an enjoyable journey.
+							Building this portfolio was  enjoyable and educational experience.
 							It marked my first venture into vector image
-							creation, which proved to be a valuable learning
-							experience. To infuse life into these vector images,
+							creation. To infuse life into these vector images,
 							I converted them into Vue components, enabling
 							animations. My primary goal was to achieve a clean
 							and user-friendly design, presenting information in

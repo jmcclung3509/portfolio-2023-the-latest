@@ -107,7 +107,7 @@ const onSlideChange = (swiper) => {
 			position: absolute;
 			bottom: 0;
 			z-index: 10;
-			color: $default-dark;
+			color: $dark-purple;
 			font-size: 1rem;
 			transition: all 0.3s;
 		}

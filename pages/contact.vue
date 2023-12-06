@@ -28,7 +28,7 @@
 							id="message" name="message" required />
 					</div>
 
-					<input class="submit flex justify-center button hollow  purple-orange  mx-auto font-light" type="submit"
+					<input class="submit flex justify-center button   mx-auto font-light" type="submit"
 						value="Submit" />
 				</form>
 			</div>
@@ -52,9 +52,13 @@ definePageMeta({
 .button {
 	&.submit {
 		padding: 10px 16px;
-		background: linear-gradient($medium-purple, $dark-purple);
+		background: linear-gradient($default-dark, $default-dark) padding-box, linear-gradient(45deg, $dark-purple, $orange) border-box;
+		border: 2px solid transparent;
 		color: $light-peach;
 		font-size: 1.2rem;
+		&:hover{
+			background: linear-gradient($default-dark, $default-dark) padding-box, linear-gradient(45deg,  $orange, $dark-purple) border-box;
+		}
 	}
 }
 

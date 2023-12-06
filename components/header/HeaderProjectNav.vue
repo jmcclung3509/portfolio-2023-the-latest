@@ -1,5 +1,5 @@
 <template>
-	<header class="main flex w-full h-28 bg-light-peach">
+	<header class="main flex w-full h-20 bg-light-peach">
 		<div
 			class="container mx-auto flex justify-between items-center z-10">
 			<div class="left flex items-center justify-center gap-4">
@@ -14,13 +14,13 @@
 					<Nuxt-link
 						:to="props.projectLinkPrev"
 						v-show="props.projectTitlePrev"
-						class="prev text-default-dark font-thin animate-arrow-prev hover:text-orange orange">
+						class="prev text-dark-purple font-thin animate-arrow-prev hover:text-orange orange">
 						{{ props.projectTitlePrev }}
 					</Nuxt-link>
 					<Nuxt-link
 						:to="props.projectLinkNext"
 						v-show="props.projectTitleNext"
-						class="next text-default-dark hover:text-orange orange font-thin animate-arrow">
+						class="next text-dark-purple hover:text-orange orange font-thin animate-arrow">
 						{{ props.projectTitleNext }}
 					</Nuxt-link>
 				</div>
@@ -30,12 +30,12 @@
 					<Nuxt-link
 						:to="props.projectLinkPrev"
 						v-show="props.projectTitlePrev"
-						class="prev text-default-dark font-thin animate-arrow-prev">
+						class="prev text-dark-purple font-thin animate-arrow-prev">
 					</Nuxt-link>
 					<Nuxt-link
 						:to="props.projectLinkNext"
 						v-show="props.projectTitleNext"
-						class="next text-default-dark font-thin animate-arrow">
+						class="next text-dark-purple font-thin animate-arrow">
 					</Nuxt-link>
 				</div>
 			</template>

@@ -5,14 +5,14 @@
 
 				<Nuxt-Link to="/"
 
-					class=" font-thin text-extra-light-purple hover:text-medium-purple"> Jessica Turner
+					class=" font-thin text-light-peach hover:text-light-purple"> Jessica Turner
 				</Nuxt-Link>
 			</div>
 
 <div class="right flex items center justify-center gap-4">
 				<Nuxt-link to="/">
 					<font-awesome-icon
-				class=" text-1.5xl text-extra-light-purple hover:text-medium-purple"
+				class=" text-1.5xl text-light-peach hover:text-medium-purple"
 				:icon="['fas', 'fa-close']"
 
 				 />
@@ -27,3 +27,9 @@
 const size = useScreenSize().size
 
 </script>
+<style lang="scss">
+@import "@/assets/scss/variables.scss";
+header.main {
+	box-shadow: 0px 4px 4px 0px rgba(#000, 0.3);
+}
+</style>
