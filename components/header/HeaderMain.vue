@@ -42,7 +42,7 @@
 							</li>
 							<li class="relative p-2">
 								<a
-									href="https://resume.io/r/FY7HX7IvG"
+									href="/resume"
 									class="animate-underline orange text-dark-purple font-thin"
 									target="_blank"
 									>Resume</a
