@@ -9,7 +9,7 @@
 				<a href="/projects/sitezeus" class="animate-underline orange">Projects</a>
 			</li>
 			<li class="relative p-2">
-				<a href="https://resume.io/r/FY7HX7IvG" target="_blank" class="animate-underline orange">Resume</a>
+				<a href="/resume" target="_blank" class="animate-underline orange">Resume</a>
 			</li>
 			<li class="relative p-2">
 				<a href="/contact" class="animate-underline orange">Contact</a>

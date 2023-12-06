@@ -15,18 +15,11 @@
 				<div
 					class="text-box flex justify-center items-center flex-col space-y-7">
 					<h3 class="text-2xl caps bold">Jessica Turner</h3>
-					<h1 class="text-7xl caps bold">Web Developer</h1>
+					<h1 class="text-3xl caps bold">Web Developer</h1>
 
 				</div>
  </div>
-				<!-- <div class="flex container mx-auto justify-center pt-14 fixed bottom-5">
-					<p
-						class="text-[12px] caps text-light-peach font-light text-center">
-						Designed & developed by me using Adobe Illustrator,
-						Figma, Vue, Nuxt and Tailwind 💜 2023
-					</p>
 
-			</div>  -->
 		</section>
 	</main>
 </template>
