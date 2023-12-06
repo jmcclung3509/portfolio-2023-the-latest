@@ -15,7 +15,7 @@
 				<div
 					class="text-box flex justify-center items-center flex-col space-y-7">
 					<h3 class="text-2xl caps bold">Jessica Turner</h3>
-					<h1 class="text-3xl caps bold">Web Developer</h1>
+					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold">Web Developer</h1>
 
 				</div>
  </div>

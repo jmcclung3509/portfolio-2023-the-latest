@@ -78,7 +78,7 @@
 
 				<template v-else>
 					<div
-						class="mobile-nav-trigger ml-auto cursor-pointer fixed  right-10"
+						class="mobile-nav-trigger ml-auto cursor-pointer fixed top-10 right-10"
 						@click="
 							(data.mobileMenuOpen = !data.mobileMenuOpen),
 								$emit('mobileMenuClick', data.mobileMenuOpen)
@@ -88,7 +88,7 @@
 							:class="
 								data.mobileMenuOpen
 									? 'text-light-peach hover:text-orange'
-									: 'text-dark-purple hover:text-light-purple'
+									: 'text-default-dark hover:text-dark-purple'
 							"
 							:icon="
 								data.mobileMenuOpen

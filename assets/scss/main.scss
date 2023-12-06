@@ -602,6 +602,36 @@ section.info {
 }
 
 
+body.page-resume{
+	header.main{
+		a{
+			color: $light-purple;
 
+				&:hover {
+					color: $medium-purple;
+
+					&:before {
+						background: linear-gradient(to right, $medium-purple, rgba($medium-purple, .4));
+					}
+
+					a {
+						color: $medium-purple;
+
+					}
+
+
+
+		}
+	}
+		.social-icon{
+			color:$light-purple;
+			transition: all .5s ease;
+			&:hover{
+				color:$medium-purple;
+			}
+		}
+
+	}
+}
 
 //Project section
