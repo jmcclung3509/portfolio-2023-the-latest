@@ -1,0 +1,106 @@
+<template>
+	<main class="relative section dark">
+		<section
+			class="section fold hero flex justify-center items-center relative bg-default-dark dark">
+			<div class="flex items-center video-container">
+				<video
+					autoplay
+					muted
+					loop
+					id="myVideo">
+					<source
+						src="@/assets/images/videos/purple-smoke.mp4"
+						type="video/mp4" />
+				</video>
+				<div
+					class="text-box flex justify-center items-center flex-col space-y-7">
+					<h3 class="text-2xl caps bold">Jessica Turner</h3>
+					<h1 class="text-7xl caps bold">Web Developer</h1>
+
+				</div>
+ </div>
+				<!-- <div class="flex container mx-auto justify-center pt-14 fixed bottom-5">
+					<p
+						class="text-[12px] caps text-light-peach font-light text-center">
+						Designed & developed by me using Adobe Illustrator,
+						Figma, Vue, Nuxt and Tailwind 💜 2023
+					</p>
+
+			</div>  -->
+		</section>
+	</main>
+</template>
+
+<script setup>
+const config = useRuntimeConfig();
+const route = useRoute();
+const size = useScreenSize().size;
+const { isMobile } = useScreenSize();
+const host = config.BASE_API_BROWSER_URL;
+const title = "Jessica Turner | 2023";
+const desc = " Personal website of Jessica Turner";
+
+const image = host + "/static/images/featured-image.png";
+const url = host + route.fullPath;
+
+useHead({
+	titleTemplate: title,
+	meta: [
+		{ name: "title", content: "title" },
+		{ name: "description", content: "desc" },
+		{ hid: "og:type", property: "og:type", content: "website" },
+		{ hid: "og:title", property: "og:title", content: title },
+		{ hid: "og:url", property: "og:url", content: url },
+		{ hid: "og:description", property: "og:description", content: desc },
+		{ hid: "og:image", property: "og:image", content: image },
+	],
+});
+
+import "@/assets/css/tailwind.css";
+
+const { bubbleLifeTime } = useBubbles();
+
+const data = reactive({
+	mobileMenuOpen: false,
+});
+
+const formattedHeroText = computed(() => {
+	return "Hi, I'm Jessica.".split("");
+});
+</script>
+
+<style lang="scss">
+@import "@/assets/scss/variables.scss";
+.letter {
+	animation-name: slideDownAnimation;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+	opacity: 0;
+}
+.video-container {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	video {
+
+        max-width: unset;
+	}
+    .text-box{
+        color: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+background: $default-dark;
+        mix-blend-mode: multiply;
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+
+    }
+	&:after{
+		content: "";
+		background: $default-dark;
+
+	}
+}
+</style>
