@@ -1,0 +1,243 @@
+@import "@/assets/scss/variables.scss";
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity .5s;
+	opacity: 1;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+	opacity: 0;
+
+}
+
+
+
+
+.zoom-out-enter-active,
+.zoom-out-leave-active {
+	transition: all .5s ease;
+	opacity: 1;
+}
+
+.zoom-out-enter-from,
+.zoom-out-leave-to {
+	opacity: 0;
+}
+
+.fade-out {
+	transition: opacity .5s;
+	animation: fade-out .5s ease-out;
+}
+
+.fade-in {
+	transition: opacity .5s;
+	animation: fade-in .5s ease-in;
+}
+
+.fade-in-text {
+	transition: opacity 1s;
+	animation: fade-in 1s ease-in;
+}
+
+.scale-in {
+	opacity: 0;
+	transition: all .5s;
+	animation: scale-in .5s ease forwards;
+
+}
+
+
+
+
+.slide-in {
+	animation: slide-in 1.5s forwards;
+	animation-timing-function: cubic-bezier(.09, .72, .6, 1.12);
+	animation-delay: 3s;
+	opacity: 0;
+}
+
+.appear {
+	opacity: 0;
+	animation: appear 1s forwards;
+	animation-delay: 2s;
+}
+
+@keyframes slide-in {
+	0% {
+		transition: all 1s ease;
+		opacity: 0;
+		transform: skew(53deg) translateX(-500%);
+	}
+
+
+
+	100% {
+
+		opacity: 1;
+		transform: skew(0deg) translateX(0);
+
+	}
+}
+
+
+.slide-in-bounce {
+	transform: translateX(-200%);
+	animation: slide-in-bounce 1s forwards linear;
+	opacity: 0;
+
+}
+
+@keyframes slide-in-bounce {
+	0% {
+		opacity: 0;
+		transform: skew(53deg) translateX(-200%);
+	}
+
+	50% {
+		opacity: 1;
+		transform: skew(0) translateX(0%);
+
+	}
+
+	60% {
+		transform: translatex(15%);
+	}
+
+	70% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(-10%);
+	}
+
+	80% {
+		transform: translatex(0);
+	}
+
+	83% {
+		transform: translateX(7%);
+	}
+
+	87% {
+		transform: translateX(0);
+	}
+
+	90% {
+		transform: translateX(5%);
+	}
+
+	93% {
+		transform: translateX(0);
+	}
+
+	95% {
+		transform: translateX(-3%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes fade-out {
+	from {
+		opacity: 1;
+
+	}
+
+	to {
+		opacity: 0;
+
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+
+	}
+
+	100% {
+		opacity: 1;
+
+	}
+}
+
+@keyframes scale-in {
+	from {
+		opacity: 0;
+		// transform: scale(.5);
+
+	}
+
+	to {
+		opacity: 1;
+		// transform: scale(1)
+	}
+}
+
+@keyframes slideDownAnimation {
+	from {
+		transform: scaleY(0);
+
+	}
+
+	to {
+		transform: scaleY(1);
+		opacity: 1;
+	}
+}
+
+@keyframes appear {
+	from {
+		transition: all 1s ease;
+		transform: translateY(-10px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+//HERO CIRCLE ANIMATION
+
+
+@keyframes move {
+	0% {
+		transform: translateX(0px);
+		opacity: 0;
+	}
+
+	1% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: translateX(70vmin);
+		opacity: 0;
+	}
+}
