@@ -95,8 +95,11 @@
 					<ul class="resume space-y-4">
 						<li class="text-dark-purple font-extralight">
 							Successfully converted legacy WordPress pages to
-							Vue/Nuxt for sitezeus.com, improving performance and
+							Vue/Nuxt for <a href = "https://sitezeus.com"> sitezeus.com, </a> improving performance and
 							enhancing user experience.
+						</li>
+						<li class="text-dark-purple font-extralight">
+							Maintained existing <a href="https://insites.sitezeus.com">WordPress </a> website while adding over 30+ new pages.
 						</li>
 						<li class="text-dark-purple font-extralight">
 							Optimize website performance by minimizing load
