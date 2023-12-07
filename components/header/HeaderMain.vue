@@ -16,7 +16,7 @@
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<Nuxt-Link
 						to="/"
-						class="text-dark-purple font-thin hover:text-orange">
+						class="text-dark-purple font-light hover:text-orange">
 						Jessica Turner
 					</Nuxt-Link>
 				</div>
@@ -28,7 +28,7 @@
 							<li class="relative p-2">
 								<a
 									href="/about"
-									class="animate-underline text-dark-purple font-thin orange"
+									class="animate-underline text-dark-purple font-light orange"
 									>About</a
 								>
 							</li>
@@ -36,14 +36,14 @@
 							<li class="relative p-2">
 								<a
 									href="/projects/sitezeus"
-									class="animate-underline orange text-dark-purple font-thin"
+									class="animate-underline orange text-dark-purple font-light"
 									>Projects</a
 								>
 							</li>
 							<li class="relative p-2">
 								<a
 									href="/resume"
-									class="animate-underline orange text-dark-purple font-thin"
+									class="animate-underline orange text-dark-purple font-light"
 									target="_blank"
 									>Resume</a
 								>
@@ -52,7 +52,7 @@
 							<li class="relative p-2">
 								<a
 									href="/contact"
-									class="animate-underline text-dark-purple font-thin orange"
+									class="animate-underline text-dark-purple font-light orange"
 									>Contact</a
 								>
 							</li>
@@ -63,14 +63,14 @@
 							href="https://github.com/jmcclung3509"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple font-thin hover:text-orange"
+								class="social-icon text-1.5xl text-dark-purple  hover:text-orange"
 								:icon="['fab', 'github']"
 						/></a>
 						<a
 							href="https://www.linkedin.com/in/jessica-turner-94b549229/"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple font-thin hover:text-orange"
+								class="social-icon text-1.5xl text-dark-purple hover:text-orange"
 								:icon="['fab', 'linkedin']" />
 						</a>
 					</div>
@@ -78,7 +78,7 @@
 
 				<template v-else>
 					<div
-						class="mobile-nav-trigger ml-auto cursor-pointer fixed top-10 right-10"
+						class="mobile-nav-trigger ml-auto cursor-pointer fixed  right-10"
 						@click="
 							(data.mobileMenuOpen = !data.mobileMenuOpen),
 								$emit('mobileMenuClick', data.mobileMenuOpen)

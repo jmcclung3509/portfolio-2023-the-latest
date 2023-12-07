@@ -8,8 +8,8 @@
 				projectTitlePrev="Insites"></HeaderProjectNav>
 		</template>
 		<div
-			class="container mx-auto space-y-14 flex flex-col mt-36 space-y-14">
-			<h2 class="text-orange text-2xl flex justify-center">
+			class="container mx-auto  flex flex-col mt-48 lg:space-y-14">
+			<h2 class="text-orange text-2xl flex justify-start lg:justify-center">
 			Nick's Restaurant
 			</h2>
 			<SingleImageText

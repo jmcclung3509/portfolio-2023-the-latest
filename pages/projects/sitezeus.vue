@@ -5,12 +5,12 @@
 				projectLinkNext="/projects/insites"
 				projectTitleNext="Insites"></HeaderProjectNav>
 		</template>
-		<div class="container mx-auto space-y-14 flex flex-col mt-36 space-y-14">
-			<div class="flex flex-col space-y-4 items-center justify-center">
+		<div class="container mx-auto lg:space-y-14 flex flex-col mt-48  ">
+			<div class="flex flex-col space-y-7  justify-start lg:justify-center">
 				<h2 class="text-orange text-2xl flex justify-center">
 					SiteZeus
 				</h2>
-				<p class="w-full lg:w-[80%]  mx-auto">
+				<p class="w-full lg:w-[60%]  mx-auto lg:text-center ">
 					The SiteZeus website has been built using Vue 3, Nuxt 3, and
 					Tailwind CSS. As part of this development effort, I
 					transformed several legacy WordPress pages into the Vue
@@ -20,7 +20,7 @@
 				</p>
 			</div>
 
-			<div class="carousel-container pt-14 lg:pt-0">
+			<div class="carousel-container ">
 				<CarouselImageText
 					:images="sitezeusImages"
 					v-slot="slotProps">

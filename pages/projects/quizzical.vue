@@ -10,8 +10,8 @@
 					projectTitlePrev="Sticky notes app"></HeaderProjectNav>
 			</template>
 			<div
-				class="container mx-auto space-y-14 flex flex-col mt-36 space-y-14">
-				<h2 class="text-orange text-2xl flex justify-center">
+				class="container mx-auto flex flex-col mt-48 lg:space-y-14">
+				<h2 class="text-orange text-2xl flex justify-start lg:justify-center">
 				Quizzical trivia game
 				</h2>
 				<SingleImageText
@@ -19,6 +19,7 @@
 					src="/static/images/pages/project-pages/quizzical-recording.mp4"
 					alt="Sticky notes recording">
 					<template #text>
+						<div class="space-y-14">
 						<p>
 							Quizzical is a fun and interactive trivia game that fetches data from an open source trivia API and displays the results.  Players are provided with five comic-book trivia question and a choice of answers.  Guesses are selected by clicking on the answer.  The check score button will  display the results and then ask if the player would like to play again. Confetti is displayed if the player guess all five questions correctly.
 
@@ -28,6 +29,7 @@
 						<p>
 							The quizzical game  was built using an API, React, React Hooks, styled components, Git/GitHub.
 						</p>
+						</div>
 
 						<div class="button-container flex flex-row gap-7 pt-7">
 							<SvgButton

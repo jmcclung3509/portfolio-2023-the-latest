@@ -235,8 +235,14 @@ header.main {
 	top: 0;
 	width: 100%;
 	transition: height .3s ease;
+	&.home{
+		box-shadow: none;
+	}
 
-
+&.project{
+	top: 100px;
+	box-shadow: none;
+}
 
 
 	&.mobile-menu-open {
@@ -437,22 +443,6 @@ section.hero {
 	height: 100vh;
 
 
-	.text-container {
-		position: absolute;
-		transform: translate(-50%, -50%);
-		width: 80vmin;
-		height: 80vmin;
-		background: rgba($light-peach, .1);
-		border-radius: 100%;
-		box-shadow: inset 0px 0px 30px 30px rgba($light-peach, 0.1);
-		left: 50%;
-		top: 55%;
-
-
-
-
-	}
-
 	.circle_container {
 		position: absolute;
 		top: 50%;
@@ -634,4 +624,3 @@ body.page-resume{
 	}
 }
 
-//Project section

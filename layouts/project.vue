@@ -2,6 +2,7 @@
 	<div>
 		<Html lang="en">
 			<Body :class="`page-${props.projectLabel}`">
+				<HeaderMain></HeaderMain>
 				<slot name="header" ></slot>
 
 				<div class="wrap flex flex-wrap pb-48">

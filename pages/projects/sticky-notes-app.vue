@@ -7,8 +7,8 @@
 				projectLinkPrev="/projects/nicks"
 				projectTitlePrev="Nick's restaurant"></HeaderProjectNav>
 		</template>
-		<div class="container mx-auto flex flex-col mt-36">
-			<h2 class="text-orange text-2xl flex justify-center pb-14">
+		<div class="container mx-auto flex flex-col mt-48 lg:space-y-14">
+			<h2 class="text-orange text-2xl flex justify-start lg:justify-center ">
 				Sticky notes application
 			</h2>
 			<SingleImageText

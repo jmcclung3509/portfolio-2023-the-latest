@@ -3,7 +3,7 @@
 	 <transition name="showHeader" @before-enter="beforeEnter" @enter="enter" @leave="leave">
 
 		<header
-			class="main flex justify-center   h-20  "
+			class="main home flex justify-center   h-20 "
 			v-if="isMouseNearTop"
 			:class="[
 				{
@@ -17,7 +17,7 @@
 					class="left flex items-center justify-center gap-2 lg:gap-4">
 					<Nuxt-Link
 						to="/"
-						class="text-extra-light-purple font-thin hover:text-medium-purple">
+						class="text-extra-light-purple font-light hover:text-medium-purple">
 						Jessica Turner
 					</Nuxt-Link>
 				</div>
@@ -29,7 +29,7 @@
 							<li class="relative p-2">
 								<a
 									href="/about"
-									class="animate-underline text-extra-light-purple font-thin purple"
+									class="animate-underline text-extra-light-purple font-light purple"
 									>About</a
 								>
 							</li>
@@ -37,14 +37,14 @@
 							<li class="relative p-2">
 								<a
 									href="/projects/sitezeus"
-									class="animate-underline purple text-extra-light-purple font-thin"
+									class="animate-underline purple text-extra-light-purple font-light"
 									>Projects</a
 								>
 							</li>
 							<li class="relative p-2">
 								<a
 									href="/resume"
-									class="animate-underline purple text-extra-light-purple font-thin"
+									class="animate-underline purple text-extra-light-purple font-light"
 									target="_blank"
 									>Resume</a
 								>
@@ -53,7 +53,7 @@
 							<li class="relative p-2">
 								<a
 									href="/contact"
-									class="animate-underline text-extra-light-purple font-thin purple"
+									class="animate-underline text-extra-light-purple font-light purple"
 									>Contact</a
 								>
 							</li>
@@ -65,14 +65,14 @@
 							href="https://github.com/jmcclung3509"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-extra-light-purple font-thin hover:text-medium-purple"
+								class="social-icon text-1.5xl text-extra-light-purple font-light hover:text-medium-purple"
 								:icon="['fab', 'github']"
 						/></a>
 						<a
 							href="https://www.linkedin.com/in/jessica-turner-94b549229/"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-extra-light-purple font-thin hover:text-medium-purple"
+								class="social-icon text-1.5xl text-extra-light-purple font-light hover:text-medium-purple"
 								:icon="['fab', 'linkedin']" />
 						</a>
 					</div>

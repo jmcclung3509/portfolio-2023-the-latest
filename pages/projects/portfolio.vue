@@ -5,12 +5,12 @@
 				projectLinkPrev="/projects/quizzical"
 				projectTitlePrev="Quizzical"></HeaderProjectNav>
 		</template>
-		<div class="container mx-auto space-y-4 flex flex-col mt-36">
-			<div class="flex flex-col space-y-4 items-center justify-center pb-14">
-				<h2 class="text-orange text-2xl flex justify-center">
+		<div class="container mx-auto flex flex-col mt-48  space-y-14">
+			<div class="flex flex-col space-y-14 items-start lg:items-center ">
+				<h2 class="text-orange text-2xl flex text-left lg:text-center">
 					Portfolio
 				</h2>
-				<p class="w-full lg:w-[80%] mx-auto">
+				<p class="w-full lg:w-[60%] mx-auto lg:text-center ">
 				I strive to unleash my creativity when designing and developing my personal
 					website, which provides me with the opportunity to explore
 					new ideas. Sometimes they succeed, and sometimes they don't,
@@ -18,7 +18,7 @@
 				</p>
 			</div>
 
-			<div class="carousel-container pt-14 lg:pt-0">
+			<div class="carousel-container ">
 				<CarouselImageText
 					:images="portfolioImages"
 					v-slot="slotProps">
@@ -103,8 +103,3 @@ const portfolioImages = [
 	},
 ];
 </script>
-<style lang="scss">
-h3{
-
-}
-</style>

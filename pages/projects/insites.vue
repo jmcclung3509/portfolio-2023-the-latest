@@ -8,9 +8,9 @@
 				projectTitlePrev="SiteZeus"></HeaderProjectNav>
 		</template>
 		<div
-			class="container mx-auto space-y-14 flex flex-col mt-36 space-y-7">
-			<h2 class="text-orange text-2xl flex justify-center">Insites</h2>
-			<p class="lg:w-[80%] w-full mx-auto ">
+			class="container mx-auto flex flex-col space-y-7 mt-48" >
+			<h2 class="text-orange text-2xl flex justify-start lg:justify-center ">Insites</h2>
+			<p class="lg:w-[60%] w-full mx-auto pb-10 lg:text-center">
 				The Insites website, serving as SiteZeus.com's blog, is built on
 				the WordPress platform using PHP, vanilla JavaScript, and Sass.
 				My responsibilities include the ongoing maintenance of WordPress
@@ -20,7 +20,7 @@
 				posts.
 			</p>
 
-			<div class="carousel-container pt-14 lg:pt-7">
+			<div class="carousel-container ">
 				<CarouselImageText
 					:images="insitesImages"
 					v-slot="slotProps">
@@ -45,7 +45,7 @@
 						</div>
 					</div>
 					<div
-						class="text-left space-y-4"
+						class="text-left space-y-4 "
 						v-if="slotProps.realIndex === 1">
 						<p>
 							In this blog post, I introduced a sticky sidebar

@@ -1,8 +1,8 @@
 <template>
 	<div
-		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full lg:space-x-14 container">
+		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full lg:space-x-14 ">
 		<div
-			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative pt-14 lg:pt-0">
+			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative ">
 			<client-only>
 				<Swiper
 					:modules="data.modules"
@@ -45,9 +45,9 @@
 				</Swiper>
 			</client-only>
 		</div>
-		<div class="text-container flex w-full lg:w-1/2 items-start">
+		<div class="text-container flex w-full lg:w-1/2 lg:pr-14 items-start">
 			<div
-				class="generic-text flex flex-col space-y-4 text-center mb-7 lgmb-0 md:text-left w-full">
+				class="generic-text flex flex-col space-y-4 text-center mb-7 lg:mb-0 md:text-left w-full">
 				<transition
 					name="fadeIn"
 					mode="out-in">
