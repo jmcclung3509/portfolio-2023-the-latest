@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: $light-peach;
+	background: $linear-gradient-1;
 	color: $default-dark;
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
@@ -69,7 +69,7 @@ ul.custom {
 			width: 15px;
 
 			border-radius: 50%;
-			border: 2px solid #FF7442;
+			border: 2px solid $orange;
 			display: inline-flex;
 			height: 15px;
 			margin-right: 20px;
@@ -214,7 +214,7 @@ ul.custom {
 }
 
 .gradient-text {
-	background: -webkit-linear-gradient(45deg, $orange, $dark-purple);
+	background: -webkit-linear-gradient( $medium-purple, $dark-purple, $default-dark);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
@@ -546,7 +546,8 @@ section.info {
 			position: absolute;
 			z-index: 30;
 			width: 100%;
-			border-radius: 0;
+			border-radius: 8px;
+			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
 		}
 
 		&:before {
@@ -554,7 +555,7 @@ section.info {
 			position: absolute;
 			width: 101%;
 			height: 81%;
-			background-image: linear-gradient(45deg, $light-peach, $light-peach),
+			background-image: linear-gradient(135deg,  $light-peach, $extra-light-purple),
 				linear-gradient(45deg, $dark-purple, $orange);
 			border: 4px solid transparent;
 			background-origin: border-box;
@@ -563,13 +564,13 @@ section.info {
 			top: 15px;
 			z-index: 20;
 			border-radius: 4px;
-			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.3);
+
 		}
 
 		&:after {
 
 			content: "";
-			background-image: linear-gradient(45deg, #FF7442, #B295DA);
+			background-image: linear-gradient(133deg, $orange, $dark-purple, $default-dark);
 			width: 100%;
 			height: 80%;
 			position: absolute;
@@ -578,7 +579,7 @@ section.info {
 			opacity: 0.2;
 			z-index: 200;
 			transition: opacity 0.3s ease;
-			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.3);
+			box-shadow: 0px 4px 4px 0px rgba(48, 31, 64, 0.4);
 		}
 
 		&:hover {
@@ -592,35 +593,35 @@ section.info {
 }
 
 
-body.page-resume{
-	header.main{
-		a{
-			color: $light-purple;
+// body.page-resume{
+// 	header.main{
+// 		a{
+// 			color: $light-purple;
 
-				&:hover {
-					color: $medium-purple;
+// 				&:hover {
+// 					color: $medium-purple;
 
-					&:before {
-						background: linear-gradient(to right, $medium-purple, rgba($medium-purple, .4));
-					}
+// 					&:before {
+// 						background: linear-gradient(to right, $medium-purple, rgba($medium-purple, .4));
+// 					}
 
-					a {
-						color: $medium-purple;
+// 					a {
+// 						color: $medium-purple;
 
-					}
+// 					}
 
 
 
-		}
-	}
-		.social-icon{
-			color:$light-purple;
-			transition: all .5s ease;
-			&:hover{
-				color:$medium-purple;
-			}
-		}
+// 		}
+// 	}
+// 		.social-icon{
+// 			color:$light-purple;
+// 			transition: all .5s ease;
+// 			&:hover{
+// 				color:$medium-purple;
+// 			}
+// 		}
 
-	}
-}
+// 	}
+// }
 

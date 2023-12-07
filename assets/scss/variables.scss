@@ -5,13 +5,14 @@ $extra-light-purple: #ECE4FB;
 $light-purple: #DDCDEA;
 $medium-purple: #B295DA;
 $dark-purple: #7F4EC3;
+$extra-dark-purple: #583688;
 
 $light-peach: #FFF4F0;
 $orange: #FF7442;
 
 
 //linear-gradients
-$linear-gradient-1: linear-gradient(149.25deg, $light-peach , $extra-light-purple,  $light-purple );
+$linear-gradient-1: linear-gradient(149.25deg, $default-white 25%, $light-peach 40%, $extra-light-purple 67%,  $light-purple 80%, $medium-purple );
 
 
 $linear-gradient-2: linear-gradient($medium-purple, $dark-purple);

@@ -22,7 +22,7 @@ module.exports = {
 		},
 		extend: {
 			fontSize: {
-				xs: ["0.95rem", "1.5"],
+				"xs": ["0.95rem", "1.5"],
 				"xs-tight": ["0.95rem", "1"],
 				"1.2xl": ["1.2rem", "1.5"],
 				"1.5xl": ["1.5rem", "1.5"],
@@ -48,6 +48,7 @@ module.exports = {
 				"dark-purple": "#7F4EC3",
 				"light-peach": "#FFF4F0",
 				"orange": "#FF7442",
+				"extra-dark-purple": "#583688"
 			},
 			backgroundImage: {
 				"linear-gradient-1":

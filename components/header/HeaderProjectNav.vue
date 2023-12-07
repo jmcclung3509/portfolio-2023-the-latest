@@ -1,5 +1,5 @@
 <template>
-	<header class="project main flex  w-full h-10 bg-light-peach ">
+	<header class="project main flex  w-full h-10 bg-transparent ">
 
 
 				<div class=" flex justify-between w-full  px-10 lg:px-64">

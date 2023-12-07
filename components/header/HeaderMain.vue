@@ -63,14 +63,14 @@
 							href="https://github.com/jmcclung3509"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple  hover:text-orange"
+								class="social-icon text-1.5xl text-dark-purple  hover:text-orange transition-all"
 								:icon="['fab', 'github']"
 						/></a>
 						<a
 							href="https://www.linkedin.com/in/jessica-turner-94b549229/"
 							target="_blank">
 							<font-awesome-icon
-								class="social-icon text-1.5xl text-dark-purple hover:text-orange"
+								class="social-icon text-1.5xl text-dark-purple hover:text-orange transition-all"
 								:icon="['fab', 'linkedin']" />
 						</a>
 					</div>
@@ -87,8 +87,8 @@
 							class="icon text-1.5xl"
 							:class="
 								data.mobileMenuOpen
-									? 'text-light-peach hover:text-orange'
-									: 'text-default-dark hover:text-dark-purple'
+									? 'text-light-peach hover:text-orange transition-all'
+									: 'text-default-dark hover:text-dark-purple transition-all'
 							"
 							:icon="
 								data.mobileMenuOpen
