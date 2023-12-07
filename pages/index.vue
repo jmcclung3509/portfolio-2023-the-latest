@@ -2,6 +2,7 @@
 	<main class="relative section dark">
 		<section
 			class="section fold hero flex justify-center items-center relative bg-default-dark dark">
+
 			<div class="flex items-center video-container">
 				<video
 					autoplay

@@ -2,13 +2,15 @@
 
 .fade-enter-active,
 .fade-leave-active {
-	transition: opacity .5s;
+	transition: all .5s ease-in-out;
 	opacity: 1;
+	transform: translateY(0);
 }
 
 .fade-enter-from,
 .fade-leave-to {
 	opacity: 0;
+	transform: translateY(-100%);
 
 }
 
@@ -89,58 +91,7 @@
 
 }
 
-@keyframes slide-in-bounce {
-	0% {
-		opacity: 0;
-		transform: skew(53deg) translateX(-200%);
-	}
 
-	50% {
-		opacity: 1;
-		transform: skew(0) translateX(0%);
-
-	}
-
-	60% {
-		transform: translatex(15%);
-	}
-
-	70% {
-		transform: translateX(0);
-	}
-
-	75% {
-		transform: translateX(-10%);
-	}
-
-	80% {
-		transform: translatex(0);
-	}
-
-	83% {
-		transform: translateX(7%);
-	}
-
-	87% {
-		transform: translateX(0);
-	}
-
-	90% {
-		transform: translateX(5%);
-	}
-
-	93% {
-		transform: translateX(0);
-	}
-
-	95% {
-		transform: translateX(-3%);
-	}
-
-	100% {
-		transform: translateY(0);
-	}
-}
 
 
 @keyframes fade-out {
