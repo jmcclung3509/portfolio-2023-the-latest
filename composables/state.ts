@@ -211,14 +211,20 @@ export function useBubbles() {
 
 	const init = () => {
 		const wrapper = document.querySelector('section.hero');
-		let bubble;
-		for (let i = 0; i < noOfBubbles; i++) {
+
+
+		  let bubble;
+		  for (let i = 0; i < noOfBubbles; i++) {
 			bubble = createBubble();
+			if(wrapper){
 			wrapper.appendChild(bubble);
-		}
-	}
+			}
+		  }
+
+	  }
 
 	const createBubble = () => {
+
 		const circleContainer = document.createElement('div');
 		circleContainer.classList.add('circle_container');
 		circleContainer.style.transform = `rotate(${Math.floor(Math.random() * 360)}deg)`;
@@ -230,6 +236,7 @@ export function useBubbles() {
 	}
 
 	const createCircle = () => {
+		console.log('createcircle')
 		const circle = document.createElement('div');
 		circle.classList.add('circle');
 

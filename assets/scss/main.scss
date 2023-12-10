@@ -214,7 +214,7 @@ ul.custom {
 }
 
 .gradient-text {
-	background: -webkit-linear-gradient( $medium-purple, $dark-purple, $default-dark);
+	background: -webkit-linear-gradient($medium-purple, $dark-purple, $default-dark);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
@@ -223,6 +223,7 @@ ul.custom {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+
 	&.rotating-gradient {
 		background: linear-gradient(130deg, #4a3062, $dark-purple, $medium-purple, $light-purple $extra-light-purple);
 		background-size: 400% 400%;
@@ -246,14 +247,15 @@ header.main {
 	top: 0;
 	width: 100%;
 	transition: height .3s ease;
-	&.home{
+
+	&.home {
 		box-shadow: none;
 	}
 
-&.project{
-	top: 100px;
-	box-shadow: none;
-}
+	&.project {
+		top: 100px;
+		box-shadow: none;
+	}
 
 
 	&.mobile-menu-open {
@@ -450,56 +452,55 @@ header.main {
 //HERO
 
 section.hero {
-
 	height: 100vh;
+	position: relative;
 
 
-	.circle_container {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		height: 10px;
-		transform-origin: left center;
-
-		.circle {
+		.circle_container {
 			position: absolute;
-			border-radius: 100%;
-			background: rgba($default-white, .25);
-			left: 0;
-			opacity: 0;
-			animation-name: move;
-			animation-duration: 20s;
-			animation-iteration-count: infinite;
+			top: 50%;
+			left: 50%;
+			height: 10px;
+			transform-origin: left center;
 
-			&.circle-1 {
-				background: rgba($light-purple, .3);
-			}
 
-			&.circle-2 {
-				background: rgba($orange, .15);
-			}
+			.circle {
+				position: absolute;
+				z-index: 9999;
+				border-radius: 100%;
+				background: rgba($default-white, .25);
+				left: 0;
+				top: 0;
+				opacity: 0;
+				animation-name: move;
+				animation-duration: 20s;
+				animation-iteration-count: infinite;
 
-			&.circle-3 {
-				background: rgba($medium-purple, .3);
-			}
+				&.circle-1 {
+					background: rgba($light-purple, .3);
+				}
 
-			&.circle-4 {
-				background: rgba($dark-purple, .15);
-			}
+				&.circle-2 {
+					background: rgba($orange, .15);
+				}
 
-			&.circle-5 {
-				background: rgba($light-peach, .3);
-			}
+				&.circle-3 {
+					background: rgba($medium-purple, .3);
+				}
 
-			&.circle-6 {
-				background: rgba($extra-light-purple, .3);
+				&.circle-4 {
+					background: rgba($dark-purple, .15);
+				}
+
+				&.circle-5 {
+					background: rgba($light-peach, .3);
+				}
+
+				&.circle-6 {
+					background: rgba($extra-light-purple, .3);
+				}
 			}
 		}
-	}
-
-
-
-
 
 }
 
@@ -566,7 +567,7 @@ section.info {
 			position: absolute;
 			width: 101%;
 			height: 81%;
-			background-image: linear-gradient(135deg,  $light-peach, $extra-light-purple),
+			background-image: linear-gradient(135deg, $light-peach, $extra-light-purple),
 				linear-gradient(45deg, $dark-purple, $orange);
 			border: 4px solid transparent;
 			background-origin: border-box;
@@ -602,6 +603,3 @@ section.info {
 
 	}
 }
-
-
-

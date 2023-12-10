@@ -26,7 +26,7 @@
 
 <script setup>
 const route = useRoute();
-console.log(route);
+
 
 const { isMobile } = useScreenSize();
 

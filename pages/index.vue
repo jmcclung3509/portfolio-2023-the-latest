@@ -1,8 +1,10 @@
 <template>
-	<main class="relative section dark">
-		<section v-if = "['lg', 'xl'].includes(size)"
-			class="section fold hero flex justify-center items-center relative bg-default-dark dark">
-			<div class="flex items-center video-container">
+	<main class="relative">
+		<section
+			class="section fold hero flex justify-center items-center relative  bg-[#160e1e] dark" >
+
+
+			<div class="flex items-center video-container"  >
 				<video
 					autoplay
 					muted
@@ -13,27 +15,28 @@
 						type="video/mp4" />
 				</video>
 				<div
-					class="text-box flex justify-center items-center flex-col space-y-7">
+					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
 					<h3 class="text-2xl caps bold">Jessica Turner</h3>
 					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold">
 						Web Developer
 					</h1>
 				</div>
 			</div>
-		</section>
-		<section v-else
-			class="section fold hero flex justify-center items-center relative bg-[#160e1e] dark">
+			<!-- <div v-else class="flex justify-center items-center relative bg-[#160e1e]">
 
-
-				<div
-					class="text-box px-2 flex justify-center items-center flex-col space-y-7">
+			<div
+					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
 					<h3 class="text-2xl text-center caps bold gradient-text rotating-gradient text-white">Jessica Turner</h3>
 					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold gradient-text rotating-gradient text-center">
 						Web Developer
 					</h1>
 				</div>
 
-		</section>
+			</div> -->
+</section>
+
+
+
 	</main>
 </template>
 
@@ -66,13 +69,12 @@ import "@/assets/css/tailwind.css";
 
 const { bubbleLifeTime } = useBubbles();
 
+
 const data = reactive({
 	mobileMenuOpen: false,
 });
 
-const formattedHeroText = computed(() => {
-	return "Hi, I'm Jessica.".split("");
-});
+
 </script>
 
 <style lang="scss">
