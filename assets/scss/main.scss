@@ -223,6 +223,17 @@ ul.custom {
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+	&.rotating-gradient {
+		background: linear-gradient(130deg, #4a3062, $dark-purple, $medium-purple, $light-purple $extra-light-purple);
+		background-size: 400% 400%;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		width: 100%;
+		height: 100%;
+		background-position: 0 0;
+		animation: rotating-gradient 10s infinite alternate;
+
+	}
 }
 
 
@@ -593,35 +604,4 @@ section.info {
 }
 
 
-// body.page-resume{
-// 	header.main{
-// 		a{
-// 			color: $light-purple;
-
-// 				&:hover {
-// 					color: $medium-purple;
-
-// 					&:before {
-// 						background: linear-gradient(to right, $medium-purple, rgba($medium-purple, .4));
-// 					}
-
-// 					a {
-// 						color: $medium-purple;
-
-// 					}
-
-
-
-// 		}
-// 	}
-// 		.social-icon{
-// 			color:$light-purple;
-// 			transition: all .5s ease;
-// 			&:hover{
-// 				color:$medium-purple;
-// 			}
-// 		}
-
-// 	}
-// }
 

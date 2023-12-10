@@ -1,8 +1,7 @@
 <template>
 	<main class="relative section dark">
-		<section
+		<section v-if = "['lg', 'xl'].includes(size)"
 			class="section fold hero flex justify-center items-center relative bg-default-dark dark">
-
 			<div class="flex items-center video-container">
 				<video
 					autoplay
@@ -16,10 +15,23 @@
 				<div
 					class="text-box flex justify-center items-center flex-col space-y-7">
 					<h3 class="text-2xl caps bold">Jessica Turner</h3>
-					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold">Web Developer</h1>
-
+					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold">
+						Web Developer
+					</h1>
 				</div>
- </div>
+			</div>
+		</section>
+		<section v-else
+			class="section fold hero flex justify-center items-center relative bg-[#160e1e] dark">
+
+
+				<div
+					class="text-box px-2 flex justify-center items-center flex-col space-y-7">
+					<h3 class="text-2xl text-center caps bold gradient-text rotating-gradient text-white">Jessica Turner</h3>
+					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold gradient-text rotating-gradient text-center">
+						Web Developer
+					</h1>
+				</div>
 
 		</section>
 	</main>
@@ -76,25 +88,22 @@ const formattedHeroText = computed(() => {
 	height: 100vh;
 	position: relative;
 	video {
-
-        max-width: unset;
+		max-width: unset;
 	}
-    .text-box{
-        color: #FFF;
-        position: absolute;
-        top: 0;
-        left: 0;
-background: $default-dark;
-        mix-blend-mode: multiply;
-        width: 100%;
-        height: 100%;
-        font-family: 'Roboto', sans-serif;
-
-    }
-	&:after{
+	.text-box {
+		color: #fff;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $default-dark;
+		mix-blend-mode: multiply;
+		width: 100%;
+		height: 100%;
+		font-family: "Roboto", sans-serif;
+	}
+	&:after {
 		content: "";
 		background: $default-dark;
-
 	}
 }
 </style>
