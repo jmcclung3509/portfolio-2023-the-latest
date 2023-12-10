@@ -4,7 +4,7 @@
 			class="section fold hero flex justify-center items-center relative  bg-[#160e1e] dark" >
 
 
-			<div class="flex items-center video-container"  >
+			<div class="flex items-center video-container"  v-if="!isMobile">
 				<video
 					autoplay
 					muted
@@ -22,7 +22,7 @@
 					</h1>
 				</div>
 			</div>
-			<!-- <div v-else class="flex justify-center items-center relative bg-[#160e1e]">
+			<div v-else class="flex justify-center items-center relative ">
 
 			<div
 					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
@@ -32,7 +32,7 @@
 					</h1>
 				</div>
 
-			</div> -->
+			</div>
 </section>
 
 

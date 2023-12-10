@@ -225,14 +225,15 @@ ul.custom {
 	}
 
 	&.rotating-gradient {
-		background: linear-gradient(130deg, #4a3062, $dark-purple, $medium-purple, $light-purple $extra-light-purple);
+		background: linear-gradient(0deg,
+		#573874, $dark-purple, $medium-purple, $light-purple, $extra-light-purple);
 		background-size: 400% 400%;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		width: 100%;
 		height: 100%;
 		background-position: 0 0;
-		animation: rotating-gradient 10s infinite alternate;
+		animation: rotating-gradient 5s infinite alternate;
 
 	}
 }
