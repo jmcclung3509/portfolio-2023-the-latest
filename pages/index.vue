@@ -4,11 +4,12 @@
 			class="section fold hero flex justify-center items-center relative  bg-[#160e1e] dark" >
 
 
-			<div class="flex items-center video-container"  v-if="!isMobile">
+			<div class="flex items-center video-container"  >
 				<video
 					autoplay
 					muted
 					loop
+					playsinline
 					id="myVideo">
 					<source
 						src="@/assets/videos/purple-smoke.mp4"
@@ -22,7 +23,7 @@
 					</h1>
 				</div>
 			</div>
-			<div v-else class="flex justify-center items-center relative ">
+			<!-- <div v-else class="flex justify-center items-center relative ">
 
 			<div
 					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
@@ -32,7 +33,7 @@
 					</h1>
 				</div>
 
-			</div>
+			</div> -->
 </section>
 
 
