@@ -38,15 +38,7 @@ export default defineNuxtConfig({
 
       noscript: [{ children: "Javascript is required" }],
 
-      script: [{
-        src: "https://www.googletagmanager.com/gtag/js?id=G-8VZ21J21KY",
-
-      },
-      {
-        src: "/static/scripts/gtm.js",
-        body: true,
-      }
-      ],
+      
     },
   },
 

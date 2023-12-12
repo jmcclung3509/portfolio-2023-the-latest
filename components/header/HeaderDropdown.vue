@@ -1,29 +1,43 @@
-<template >
-<transition name="fade">
-	<div class= "absolute top-2 pr-10 w-fit ml-auto left-0 right-0  z-10 opacity-80" v-if="!isMouseNearTop">
-				<p class="text-extra-light-purple  text-center py-1 px-7 rounded-lg">Menu</p>
-			</div>
-</transition>
-	 <transition name="showHeader" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-
+<template>
+	<transition name="fade">
+		<div
+			class="absolute top-2 pr-10 w-fit ml-auto left-0 right-0 z-10 opacity-80"
+			v-if="!isMouseNearTop && !data.mobileMenuOpen">
+			<p class="text-extra-light-purple text-center py-1 px-7 rounded-lg">
+				Menu
+			</p>
+		</div>
+	</transition>
+	<transition
+		name="showHeader"
+		@before-enter="beforeEnter"
+		@enter="enter"
+		@leave="leave">
 		<header
-			class="main home flex justify-center   h-20 "
+			class="main home flex justify-center h-20"
 			v-if="isMouseNearTop"
 			:class="[
 				{
-					'sticky-header': isHeaderSticky,
 					'mobile-menu-open': data.mobileMenuOpen,
 				},
 			]">
-			<div
-				class="flex justify-between items-center container mx-auto">
+			<div class="flex justify-between items-center container mx-auto">
 				<div
 					class="left flex items-center justify-center gap-2 lg:gap-4">
+					<template v-if="isMobile">
+						<Nuxt-Link
+						to="/"
+						>
+						<img  class="h-[50px]" src="@/assets/images/logos/JT-logo-light.svg" alt="Jessica Turner logo"/>
+					</Nuxt-Link>
+					</template>
+					<template v-else>
 					<Nuxt-Link
 						to="/"
-						class="text-extra-light-purple font-light hover:text-medium-purple">
+						class="text-dark-purple font-light hover:text-orange">
 						Jessica Turner
 					</Nuxt-Link>
+					</template>
 				</div>
 
 				<template v-if="!['sm', 'md'].includes(size)">
@@ -63,8 +77,7 @@
 							</li>
 						</ul>
 					</nav>
-					<div
-						class="right flex items-center justify-end gap-4 pt-2">
+					<div class="right flex items-center justify-end gap-4 pt-2">
 						<a
 							href="https://github.com/jmcclung3509"
 							target="_blank">
@@ -84,20 +97,15 @@
 
 				<template v-else>
 					<div
-						class="mobile-nav-trigger ml-auto cursor-pointer fixed  right-10"
-						@click="
-							(data.mobileMenuOpen = !data.mobileMenuOpen),
-								$emit(
-									'mobileMenuClick',
-									data.mobileMenuOpen
-								)
-						">
+						class="mobile-nav-trigger ml-auto cursor-pointer fixed right-10"
+						@click="onMobileMenuToggle"
+						>
 						<font-awesome-icon
 							class="icon text-1.5xl mt[-10px]"
 							:class="
 								data.mobileMenuOpen
 									? 'text-light-peach hover:text-orange'
-									: 'text-extra-light-purple hover:text-light-purple'
+									: 'text-extra-light-purple hover:text-medium-purple'
 							"
 							:icon="
 								data.mobileMenuOpen
@@ -109,28 +117,24 @@
 			</div>
 		</header>
 	</transition>
-
 </template>
 <script setup>
 
-const scrollPosition = useScroll().scrollPosition;
-const scrollDirectionUp = useScroll().scrollDirectionUp;
 const size = useScreenSize().size;
+const isMobile = useScreenSize().isMobile
 
+const emits = defineEmits("mobileMenuClick");
 
 const data = reactive({
 	mobileMenuOpen: false,
 });
 
-const isHeaderSticky = computed(() => {
-	if (scrollDirectionUp.value && scrollPosition.value != 0) {
-		return true;
-	}
-	return false;
-});
-const onMobileMenuClick = (payload) => {
-	data.mobileMenuOpen = payload;
+const onMobileMenuToggle = () => {
+  data.mobileMenuOpen = !data.mobileMenuOpen;
+  emits('mobileMenuClick', data.mobileMenuOpen);
 };
+
+
 const isMouseNearTop = ref(false);
 
 const handleMouseMove = (event) => {
@@ -146,33 +150,31 @@ const handleMouseMove = (event) => {
 };
 
 const beforeEnter = (el) => {
-
-  el.style.transition = "all 0.5s ease";
-  el.style.opacity = 0;
-  el.style.transform = "translateY(-100%)";
-
+	el.style.transition = "all 0.5s ease";
+	el.style.opacity = 0;
+	el.style.transform = "translateY(-100%)";
 };
 
 const enter = (el, done) => {
-	setTimeout(()=>{
-  void el.offsetWidth; // Trigger reflow to make sure the transition is applied
+	setTimeout(() => {
+		void el.offsetWidth; // Trigger reflow to make sure the transition is applied
 
-  el.style.opacity = 1;
-  el.style.transform = "translateY(0)";
+		el.style.opacity = 1;
+		el.style.transform = "translateY(0)";
 
-  done();
-}, 300)
+		done();
+	}, 300);
 };
 
 const leave = (el, done) => {
-  el.style.transition = "all 0.5s ease";
-  el.style.opacity = 0;
-  el.style.transform = "translateY(-100%)";
+	el.style.transition = "all 0.5s ease";
+	el.style.opacity = 0;
+	el.style.transform = "translateY(-100%)";
 
-  // Set a small delay to ensure the transition has time to start before removing the element
-  setTimeout(() => {
-    done();
-  }, 500); // Adjust the delay to match the transition duration
+	// Set a small delay to ensure the transition has time to start before removing the element
+	setTimeout(() => {
+		done();
+	}, 500); // Adjust the delay to match the transition duration
 };
 // console.log(isHomepage)
 

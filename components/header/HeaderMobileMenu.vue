@@ -14,10 +14,9 @@
 			<li class="relative p-2">
 				<a href="/contact" class="animate-underline orange">Contact</a>
 			</li>
-
-
-
-
 		</ul>
 	</div>
 </template>
+<script setup>
+const emits = defineEmits('mobileMenuClick');
+</script>

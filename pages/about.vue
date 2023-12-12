@@ -25,10 +25,12 @@
 			</h3>
 		</div>
 		<div class="contents w-full">
-			<template v-if="data.selectedSection === 'about'">
+			<transition :name="transitionDirection"  mode="out-in" >
+				<div :key="data.selectedSection">
+				<template v-if="data.selectedSection === 'about'">
 
 
-						<div id="about" class="flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0 ">
+						<div id="1" class="flex items-start flex-col lg:flex-row justify-center space-y-14 lg:space-y-0 ">
 							<div
 								class="flex flex-col w-full lg:w-1/2 items-start space-y-7">
 								<div class="content space-y-7 pb-7">
@@ -85,7 +87,7 @@
 
 			</template>
 			<template v-if="data.selectedSection === 'skills'">
-				<div id="skills"
+				<div id="2"
 								class="flex flex-col w-full lg:w-3/4  items-start space-y-7">
 								<div class="content space-y-7">
 								<p class="text-extra-dark-purple font-light text pb-7">
@@ -118,8 +120,9 @@
 									</ul>
 								</div>
 							</div>
-			</template>	<template v-if="data.selectedSection === 'experience'">
-				<div
+			</template>
+			<template v-if="data.selectedSection === 'experience'">
+				<div id="3"
 								class="flex flex-col lg:w-3/4 w-full items-start space-y-7">
 								<div class="content space-y-7">
 								<p class="text-extra-dark-purple font-light pb-7">
@@ -154,6 +157,8 @@
 								</div>
 							</div>
 			</template>
+			</div>
+			</transition>
 		</div>
 	</div>
 
@@ -173,16 +178,29 @@
 
 
 <script setup>
-const route = useRoute();
-const size = useScreenSize().size;
-const { isMobile } = useScreenSize();
+
 const data = reactive({
 	selectedSection: "about",
+	previousSection: "about"
 });
+const sections=['about', 'skills', 'experience']
+
 const showSection = (section) => {
+	data.previousSection = data.selectedSection
 	data.selectedSection = section;
-	console.log(section);
 };
+
+
+const transitionDirection = computed(() => {
+  const currentIndex = sections.indexOf(data.selectedSection);
+  const previousIndex = sections.indexOf(data.previousSection)
+
+  const direction = currentIndex > previousIndex ? 'slide-right' : 'slide-left';
+
+  return direction;
+});
+
+
 </script>
 
 <style lang="scss">

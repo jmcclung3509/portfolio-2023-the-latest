@@ -4,6 +4,7 @@
 		<div
 			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative ">
 			<client-only>
+
 				<Swiper
 					:modules="data.modules"
 					:space-between="10"
@@ -16,7 +17,9 @@
 					<swiper-slide
 						v-for="(item, i) in props.images"
 						:key="i">
+
 						<template v-if="item.type === 'video/mp4'">
+
 							<video
 								class="video rounded-2xl max-h-[600px] mx-auto"
 								autoplay="autoplay"
@@ -62,6 +65,7 @@ import { Swiper } from "swiper/vue";
 import { SwiperSlide } from "swiper/vue";
 
 import { Navigation } from "swiper/modules";
+import { CirclesToRhombusesSpinner } from 'epic-spinners'
 
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -121,14 +125,14 @@ const onSlideChange = (swiper) => {
 			&:before {
 
 				content: "Next";
-				right: 100px;
+				right: 200px;
 				font-weight: 100;
 
 			}
 			&:after{
 				font-family: "Material Symbols Outlined";
 				content: "arrow_forward";
-				right: 70px;
+				right: 170px;
 				transition: all .3s ease;
 
 			}
@@ -143,14 +147,14 @@ const onSlideChange = (swiper) => {
 			transition: all .3s ease;
 			&:before {
 				content: "Previous";
-				left: 100px;
+				left: 200px;
 				font-weight: 100;
 
 			}
 			&:after{
 				font-family: "Material Symbols Outlined";
 				content: "arrow_back";
-				left: 70px;
+				left: 170px;
 
 
 			}

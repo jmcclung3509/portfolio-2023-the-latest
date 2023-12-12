@@ -9,56 +9,7 @@ export const useScroll = () => {
 	const scrollPosition = ref(0);
 	const lastScrollPosition = ref(0);
 	const scrollDirectionUp = ref(false);
-	const colorScrollContainer = ref<HTMLElement | null>(null);
-
-	const handleScroll = () => {
-
-		const socialIcons = document.querySelectorAll(".social-icon");
-
-
-
-
-		socialIcons.forEach((icon) => {
-			const iconRect = icon.getBoundingClientRect();
-			const darkSections = document.querySelectorAll(".section.dark");
-			const lightSections = document.querySelectorAll(".light")
-
-			let isLight = false;
-
-			console.log(isLight)
-
-			lightSections.forEach((section) => {
-				const sectionRect = section.getBoundingClientRect();
-				if (iconRect.top < sectionRect.bottom && iconRect.bottom > sectionRect.top) {
-					isLight = true;
-				}
-			});
-
-
-
-
-			if (isLight) {
-				icon.classList.remove("light")
-				icon.classList.add("dark");
-
-			} else {
-				icon.classList.remove("dark")
-				icon.classList.add("light");
-			}
-
-		});
-	};
-
-	onMounted(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
-		colorScrollContainer.value = document.querySelector(".color-scroll-container");
-	});
-
-	onUnmounted(() => {
-		window.removeEventListener("scroll", handleScroll);
-	});
-
-	return { scrollPosition, scrollDirectionUp, colorScrollContainer };
+	return { scrollPosition, scrollDirectionUp};
 };
 
 
@@ -236,11 +187,10 @@ export function useBubbles() {
 	}
 
 	const createCircle = () => {
-		console.log('createcircle')
 		const circle = document.createElement('div');
 		circle.classList.add('circle');
 
-		// Randomly generate a number between 1 and 4 to assign circle classes
+	
 		const randomCircleClass = Math.floor(Math.random() * 5) + 1;
 		circle.classList.add(`circle-${randomCircleClass}`);
 

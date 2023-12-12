@@ -14,11 +14,20 @@
 				class="container m-auto flex justify-between items-center container mx-auto">
 				<div
 					class="left flex items-center justify-center gap-2 lg:gap-4">
+					<template v-if="isMobile">
+						<Nuxt-Link
+						to="/"
+						>
+						<img  class="h-[50px]" src="@/assets/images/logos/JT-logo-purple.svg" alt="Jessica Turner logo"/>
+					</Nuxt-Link>
+					</template>
+<template v-else>
 					<Nuxt-Link
 						to="/"
 						class="text-dark-purple font-light hover:text-orange">
 						Jessica Turner
 					</Nuxt-Link>
+					</template>
 				</div>
 
 				<template v-if="!['sm', 'md'].includes(size)">
@@ -88,7 +97,7 @@
 							:class="
 								data.mobileMenuOpen
 									? 'text-light-peach hover:text-orange transition-all'
-									: 'text-default-dark hover:text-dark-purple transition-all'
+									: 'text-dark-purple hover:text-orange transition-all'
 							"
 							:icon="
 								data.mobileMenuOpen
@@ -106,7 +115,10 @@
 const scrollPosition = useScroll().scrollPosition;
 const scrollDirectionUp = useScroll().scrollDirectionUp;
 const size = useScreenSize().size;
-const route = useRoute()
+const isMobile =useScreenSize().isMobile
+console.log(isMobile)
+
+const emits = defineEmits('mobileMenuClick');
 
 const data = reactive({
 	mobileMenuOpen: false,
@@ -118,12 +130,6 @@ const isHeaderSticky = computed(() => {
 	}
 	return false;
 });
-const onMobileMenuClick = (payload) => {
-	data.mobileMenuOpen = payload;
-};
-
-
-
 
 
 </script>

@@ -18,22 +18,12 @@
 				<div
 					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
 					<h3 class="text-2xl caps bold">Jessica Turner</h3>
-					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold">
+					<h1 class="text-3xl lg:text-7xl xl:text-8xl text-center caps bold">
 						Web Developer
 					</h1>
 				</div>
 			</div>
-			<!-- <div v-else class="flex justify-center items-center relative ">
 
-			<div
-					class="text-box flex justify-center text-contianer items-center flex-col space-y-7">
-					<h3 class="text-2xl text-center caps bold gradient-text rotating-gradient text-white">Jessica Turner</h3>
-					<h1 class="text-3xl lg:text-7xl xl:text-8xl caps bold gradient-text rotating-gradient text-center">
-						Web Developer
-					</h1>
-				</div>
-
-			</div> -->
 </section>
 
 
