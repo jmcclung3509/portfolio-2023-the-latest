@@ -45,8 +45,8 @@ h4 {
 }
 
 p {
-	font-size: 16px;
-	font-weight: 200;
+	font-size: 18x;
+	font-weight: 300;
 	letter-spacing: 1px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -73,6 +73,7 @@ ul.custom {
 			display: inline-flex;
 			height: 15px;
 			margin-right: 20px;
+
 
 			h3 {
 				text-transform: uppercase;
@@ -214,7 +215,7 @@ ul.custom {
 }
 
 .gradient-text {
-	background: -webkit-linear-gradient($medium-purple, $dark-purple, $default-dark);
+	background: -webkit-linear-gradient(0deg, $orange, $dark-purple);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 

@@ -1,10 +1,9 @@
 <template>
 	<div
-		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full lg:space-x-14 ">
+		class="image-text-carousel flex flex-col-reverse lg:flex-row lg:items-start justify-center w-full lg:space-x-14">
 		<div
-			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative ">
+			class="image-container w-full lg:w-1/2 mx-auto rounded-2xl relative">
 			<client-only>
-
 				<Swiper
 					:modules="data.modules"
 					:space-between="10"
@@ -17,9 +16,7 @@
 					<swiper-slide
 						v-for="(item, i) in props.images"
 						:key="i">
-
 						<template v-if="item.type === 'video/mp4'">
-
 							<video
 								class="video rounded-2xl max-h-[600px] mx-auto"
 								autoplay="autoplay"
@@ -65,7 +62,7 @@ import { Swiper } from "swiper/vue";
 import { SwiperSlide } from "swiper/vue";
 
 import { Navigation } from "swiper/modules";
-import { CirclesToRhombusesSpinner } from 'epic-spinners'
+import { CirclesToRhombusesSpinner } from "epic-spinners";
 
 import "swiper/scss";
 import "swiper/scss/navigation";
@@ -106,7 +103,8 @@ const onSlideChange = (swiper) => {
 	.custom-prev {
 		display: inline;
 		cursor: pointer;
-		&:before, &:after {
+		&:before,
+		&:after {
 			content: "";
 			position: absolute;
 			bottom: 0;
@@ -116,52 +114,63 @@ const onSlideChange = (swiper) => {
 			transition: all 0.3s;
 		}
 		&:hover {
-			&:before, &:after {
+			&:before,
+			&:after {
 				color: $orange;
 			}
 		}
 		&.custom-next {
-			transition: all .3s ease;
+			transition: all 0.3s ease;
 			&:before {
-
 				content: "Next";
-				right: 200px;
-				font-weight: 100;
-
-			}
-			&:after{
-				font-family: "Material Symbols Outlined";
-				content: "arrow_forward";
-				right: 170px;
-				transition: all .3s ease;
-
-			}
-			&:hover{
-				&:after{
-					right: 67px;
+				right: 100px;
+				font-weight: 300;
+				@screen xl {
+					right: 200px;
 				}
 			}
-
+			&:after {
+				font-family: "Material Symbols Outlined";
+				content: "arrow_forward";
+				right: 70px;
+				transition: all 0.3s ease;
+				@screen xl {
+					right: 170px;
+				}
+			}
+			&:hover {
+				&:after {
+					right: 67px;
+					@screen xl {
+						right: 167px;
+					}
+				}
+			}
 		}
 		&.custom-prev {
-			transition: all .3s ease;
+			transition: all 0.3s ease;
 			&:before {
 				content: "Previous";
-				left: 200px;
-				font-weight: 100;
-
+				left: 100px;
+				font-weight: 300;
+				@screen xl {
+					left: 200px;
+				}
 			}
-			&:after{
+			&:after {
 				font-family: "Material Symbols Outlined";
 				content: "arrow_back";
-				left: 170px;
-
-
+				left: 70px;
+				@screen xl {
+					left: 170px;
+				}
 			}
-			&:hover{
+			&:hover {
 				&:after {
 					left: 67px;
-
+					@screen xl {
+						left: 167px;
+					}
 				}
 			}
 		}

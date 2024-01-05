@@ -74,7 +74,7 @@
 
 						</div>
 
-							<div class="lg:w-1/2 w-full ml-[-20px] lg:ml-0">
+							<div class="lg:w-1/2 hidden lg:block ml-[-20px] lg:ml-0">
 								<div class="image-container lg:w-3/4 pb-[75%] mx-auto">
 								<img
 									class="w-full "
@@ -99,19 +99,19 @@
 									<ul class="flex tems-start flex-col lg:flex-row flex-wrap w-[120%] custom ">
 										<li class=" w-full lg:w-1/2 pb-14 pr-7">
 											<h3 class=" text-1.2xl text-dark-purple">html/css</h3>
-											<p class="text-extra-dark-purple font-light ml-[40px]"> SCSS, Sass, Flex, Grid, Bootstrap, Tailwind</p>
+											<p class="text-extra-dark-purple font-light ml-[40px]"> SCSS, Sass, Flex, Grid, Bootstrap, Tailwind, Animations</p>
 										</li>
 										<li class=" w-full lg:w-1/2 pb-14 pr-7">
 											<h3 class="text-dark-purple text-1.2xl">design</h3>
-											<p class="text-extra-dark-purple font-light ml-[40px]"> Wireframing, prototyping, Adobe Creative Suite, Figma</p>
+											<p class="text-extra-dark-purple font-light ml-[40px]"> Wireframing, Prototyping, Adobe Creative Suite, Figma</p>
 										</li>
 										<li class=" w-full lg:w-1/2 pb-14 pr-7">
 											<h3 class="text-dark-purple text-1.2xl">Development</h3>
-											<p class="text-extra-dark-purple font-light ml-[40px]"> JavaScript(ES6+), API, Vue, Nuxt, WordPress</p>
+											<p class="text-extra-dark-purple font-light ml-[40px]"> JavaScript(ES6+), APIs, Vue, Nuxt, WordPress, Typescript, React, Node</p>
 										</li>
 										<li class=" w-full lg:w-1/2 pb-14 pr-7">
 											<h3 class="text-dark-purple text-1.2xl">Tools</h3>
-											<p class="text-extra-dark-purple font-light ml-[40px]"> Git/GitHub, Sourcetree, Azure, Chrome DevTools, FTP Client, Postman, MongoDB</p>
+											<p class="text-extra-dark-purple font-light ml-[40px]"> Git/GitHub, Sourcetree, Azure, Gulp, FTP Client, Postman, MongoDB</p>
 										</li>
 										<li class=" w-full lg:w-1/2 pb-14 pr-7">
 											<h3 class="text-dark-purple text-1.2xl">Soft skills</h3>

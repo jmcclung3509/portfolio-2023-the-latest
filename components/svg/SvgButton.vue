@@ -25,7 +25,7 @@ const props = defineProps({
 	link: String,
 	label: String,
 	goTo: String,
-	//cssClas=text-color
+
 	cssClass: {
 		type: String,
 		default: 'gradient-text'

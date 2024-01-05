@@ -2,7 +2,7 @@
 	<div class="pt-28 pb-20">
 		<div class="container mx-auto space-y-14">
 			<div class="header space-y-2">
-				<h1 class="gradient-text text-3xl lg:text-4xl">
+				<h1 class="text-dark-purple text-3xl lg:text-4xl">
 					Jessica Turner
 				</h1>
 				<h2 class=" caps text-1.2xl lg:text-1.5xl text-extra-dark-purple">
@@ -10,17 +10,17 @@
 				</h2>
 				<div class="links flex gap-4 justify-start">
 					<nuxt-link
-						class="caps text-orange font-normal hover:text-dark-purple animate-underline purple"
+						class="caps text-orange font-normal hover:text-dark-purple hover:transition-all duration:3000"
 						to="/">
 						Portfolio
 					</nuxt-link>
 					<nuxt-link
-						class="caps text-orange font-normal hover:text-dark-purple animate-underline purple"
+						class="caps text-orange font-normal hover:text-dark-purple hover:transition-all duration:3000 "
 						to="https://www.linkedin.com/in/jessica-turner-94b549229/">
 						Linkedin</nuxt-link
 					>
 					<nuxt-link
-						class="caps text-orange  font-normal hover:text-dark-purple animate-underline purple"
+						class="caps text-orange  font-normal hover:text-dark-purple hover:transition-all duration-300"
 						to="https://github.com/jmcclung3509">
 						GitHub</nuxt-link
 					>
@@ -155,9 +155,8 @@
 						</li>
 						<li class="text-extra-dark-purple font-light ">
 							Optimize website performance by minimizing load
-							times. Implementing lazy loading, and reducing
-							resource requests, resulting in improved user
-							satisfaction and SEO rankings.
+							times by 10%, resulting in improved user
+							satisfaction and a 15% increase in SEO rankings.
 						</li>
 						<li class="text-extra-dark-purple font-light ">
 							Create and maintain documentation for code, project
@@ -185,11 +184,7 @@
 							Leveraged Vue, Nuxt and React frontend frameworks to
 							construct dynamic websites and applications.
 						</li>
-						<li class="text-extra-dark-purple font-light ">
-							Proficiently build and sustain dynamic, responsive
-							websites and applications, ensuring cross-browser
-							compatibility.
-						</li>
+
 						<li class="text-extra-dark-purple font-light ">
 							Stay at the forefront of the web development
 							industry by continuously adopting emerging
