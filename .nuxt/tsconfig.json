@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
-    "baseUrl": "/Users/ryanturner/Desktop/portfolio-2023-the-latest",
+    "baseUrl": "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -18,64 +18,64 @@
     ],
     "paths": {
       "~": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
       ],
       "~/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
       ],
       "@": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
       ],
       "@/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
       ],
       "~~": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
       ],
       "~~/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
       ],
       "@@": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest"
       ],
       "@@/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
       ],
       "assets": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/assets"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/assets"
       ],
       "assets/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/assets/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/assets/*"
       ],
       "public": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/public"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/public"
       ],
       "public/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/public/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/public/*"
       ],
       "#app": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/compat/vue-demi"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#vue-router": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/.nuxt/vue-router"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/vue-router"
       ],
       "#imports": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/.nuxt/imports"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/imports"
       ],
       "#build": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/.nuxt"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt"
       ],
       "#build/*": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/.nuxt/*"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/*"
       ],
       "#components": [
-        "/Users/ryanturner/Desktop/portfolio-2023-the-latest/.nuxt/components"
+        "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/.nuxt/components"
       ]
     }
   },
@@ -83,14 +83,14 @@
     "./nuxt.d.ts",
     "../**/*",
     "../**/*",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest",
-    "/Users/ryanturner/Desktop/portfolio-2023-the-latest/*"
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest",
+    "/Users/jessicaturner/Desktop/portfolio-2023-the-latest/*"
   ],
   "exclude": [
     "../dist",
